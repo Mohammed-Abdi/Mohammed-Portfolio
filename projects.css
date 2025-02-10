@@ -1,0 +1,129 @@
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#projects .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+/*Projects*/
+.container .project {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  max-width: 450px;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(30px) scale(0.99);
+  transition: all 0.7s ease-in-out;
+}
+
+.container .project.show {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+.project .detailsContainer {
+  padding: 20px;
+}
+
+.project .projectDetails {
+  display: flex;
+  flex-direction: column;
+  min-height: 160px;
+}
+
+.project .projectDetails p {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.project .projectTitle {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/*Projects Mockup*/
+.container .project img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.project .technologiesUsed {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.technologiesUsed .projectsTechTitle {
+  font-weight: 500;
+}
+
+.technologiesUsed .technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.technologiesUsed span {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+}
+
+.project .projectButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.project .projectButtons img {
+  width: 18px;
+  height: 18px;
+}
+
+.projectButtons .whiteButton {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  padding: 8px 16px;
+  background: var(--white);
+  color: var(--black);
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 21.665px;
+  transition: all 0.3s ease-in-out;
+}
+
+.projectButtons .whiteButton:hover {
+  opacity: 0.7;
+}
+
+.projectButtons .blackButton {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 21.665px;
+  transition: all 0.3s ease-in-out;
+}
+
+.projectButtons .blackButton:hover {
+  background: var(--border);
+}

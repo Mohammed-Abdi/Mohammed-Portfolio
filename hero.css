@@ -1,0 +1,220 @@
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background: var(--black);
+  position: relative;
+}
+/*Glow effect on hero background*/
+#hero .glow {
+  height: 8vh;
+  width: 20vw;
+  position: absolute;
+  background: #ffffff;
+  filter: blur(100px);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  opacity: 0;
+  transform: translateY(30px) scale(0.99);
+  transition: all 0.7s ease-in-out;
+}
+
+.hero .container.show {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+.hero .container .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero .status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 20.335px;
+  border: 1px solid var(--border);
+  opacity: 0;
+  transform: scale(0.79);
+  transition: all 0.7s ease-in-out;
+}
+
+.status.show {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/*show case my status if I am available or not*/
+.status .statusColor {
+  font-weight: 700;
+  color: var(--available);
+  animation: light 1.5s infinite alternate;
+}
+
+@keyframes light {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.hero .name,
+.hero .profession {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 55px;
+}
+
+.hero .intro {
+  background: var(--textGradient);
+  background-clip: text;
+  color: transparent;
+  max-width: 70%;
+  text-align: center;
+  margin-inline: auto;
+}
+
+.hero .buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(10px) scale(0.99);
+  transition: all 0.7s ease-in-out;
+}
+
+.buttons.show {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+.buttons a {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  text-decoration: none;
+  color: var(--black);
+  background: var(--white);
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 20.335px;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttons a:hover {
+  background: #d1d1d1;
+}
+
+.buttons img {
+  width: 17px;
+  height: 17px;
+}
+
+/*Arrow animation telling users to scroll*/
+.scroll-up-arrow {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 72px;
+  gap: -50px;
+  line-height: 10px;
+  opacity: 0.7;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.arrow {
+  display: block;
+  transform: rotate(-90deg);
+  animation: arrowWave 1.2s infinite;
+}
+
+.arrow:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+@keyframes arrowWave {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 470px) {
+  .hero .name,
+  .hero .profession {
+    font-size: 30px;
+    line-height: 22.9px;
+  }
+  .hero .container,
+  .hero .container .texts {
+    gap: 12.5px;
+  }
+  .hero .status,
+  .container .intro,
+  .buttons a {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 471px) and (max-width: 650px) {
+  .hero .name,
+  .hero .profession {
+    font-size: 40px;
+    line-height: 30.5px;
+  }
+  .hero .container,
+  .container .texts {
+    gap: 16.67px;
+  }
+  .hero .status,
+  .container .intro,
+  .buttons a {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 1000px) {
+  .hero .name,
+  .hero .profession {
+    font-size: 50px;
+    line-height: 38.2px;
+  }
+  .hero .container,
+  .hero .container .texts {
+    gap: 20.8px;
+  }
+  .hero .status,
+  .container .intro {
+    font-size: 14px;
+  }
+}

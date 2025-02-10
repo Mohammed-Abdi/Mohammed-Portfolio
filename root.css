@@ -1,0 +1,24 @@
+:root {
+  --black: #000000;
+  --white: #f8fafc;
+  --gradient: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 1%,
+    rgba(0, 0, 0, 0.8) 50%,
+    #000 100%
+  );
+  --textGradient: linear-gradient(90deg, #6d6d6d, #858585, #6d6d6d);
+  --titleGradient: linear-gradient(90deg, #000000, #ffffff, #000000);
+  --instagramGradient: conic-gradient(
+    from 180deg,
+    #f58529,
+    #dd2a7b,
+    #8134af,
+    #7f1392,
+    #f58529
+  );
+  --available: #00ff00;
+  --notAvailable: #ff0000;
+  --border: #1e293b;
+  --test: rgb(0, 132, 255);
+}

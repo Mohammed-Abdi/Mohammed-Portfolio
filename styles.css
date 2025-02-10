@@ -1,0 +1,14 @@
+@import url(importer.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+  background: var(--black);
+}
