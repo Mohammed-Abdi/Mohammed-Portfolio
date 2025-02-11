@@ -170,9 +170,12 @@
 }
 
 @media (max-width: 470px) {
+  #hero {
+    height: 90vh;
+  }
   .hero .name,
   .hero .profession {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 22.9px;
   }
   .hero .container,

@@ -1,8 +1,10 @@
 #main {
+  --main-max-width: 1000px;
+  --main-padding: 20px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1000px;
+  width: min(var(--main-max-width), 100% - (var(--main-padding) * 2));
   margin-inline: auto;
-  padding-inline: 20px;
 }
