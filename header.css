@@ -118,6 +118,7 @@
 
 .menu .bar {
   height: 2px;
+  border-radius: 1px;
   width: 20px;
   background: var(--white);
   transition: all 0.3s ease-in-out;
