@@ -10,20 +10,20 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
 /*My Education and Experience*/
 .container .experience {
   display: flex;
   flex-direction: column;
   border: 1px solid var(--border);
-  border-radius: 10px;
-  min-width: 340px;
+  border-radius: 0.625rem;
+  min-width: 21.25rem;
   width: 100%;
-  padding: 20px;
-  gap: 5px;
+  padding: 1.25rem;
+  gap: 0.3125rem;
   opacity: 0;
-  transform: translateY(30px) scale(0.99);
+  transform: translateY(1.875rem) scale(0.99);
   transition: all 0.7s ease-in-out;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .experience .mainTopic {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -44,6 +44,6 @@
 }
 
 .experience p {
-  padding-block: 10px;
+  padding-block: 0.625rem;
   opacity: 0.5;
 }

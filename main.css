@@ -1,6 +1,6 @@
 #main {
-  --main-max-width: 1000px;
-  --main-padding: 20px;
+  --main-max-width: 62.5rem;
+  --main-padding: 1.25rem;
 
   display: flex;
   flex-direction: column;

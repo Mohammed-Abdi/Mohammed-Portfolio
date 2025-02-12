@@ -9,17 +9,19 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
+
 /*Projects*/
 .container .project {
   display: flex;
   flex-direction: column;
   border: 1px solid var(--border);
-  max-width: 450px;
-  border-radius: 10px;
+  max-width: 28.125rem;
+  border-radius: 0.625rem;
   opacity: 0;
-  transform: translateY(30px) scale(0.99);
+  transform: translateY(1.875rem);
+  scale: 0.99;
   transition: all 0.7s ease-in-out;
 }
 
@@ -29,22 +31,22 @@
 }
 
 .project .detailsContainer {
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .project .projectDetails {
   display: flex;
   flex-direction: column;
-  min-height: 160px;
+  min-height: 10rem;
 }
 
 .project .projectDetails p {
-  font-size: 14px;
+  font-size: 0.875rem;
   opacity: 0.7;
 }
 
 .project .projectTitle {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
@@ -52,15 +54,15 @@
 .container .project img {
   width: 100%;
   height: auto;
-  border-radius: 10px 10px 0 0;
+  border-radius: 0.625rem 0.625rem 0 0;
 }
 
 .project .technologiesUsed {
   display: flex;
   flex-direction: column;
-  font-size: 14px;
-  gap: 10px;
-  padding-bottom: 20px;
+  font-size: 0.875rem;
+  gap: 0.625rem;
+  padding-bottom: 1.25rem;
 }
 
 .technologiesUsed .projectsTechTitle {
@@ -70,39 +72,39 @@
 .technologiesUsed .technologies {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 0.625rem;
 }
 .technologiesUsed span {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
-  padding: 2px 8px;
+  padding: 0.125rem 0.5rem;
   border: 1px solid var(--border);
-  border-radius: 13px;
+  border-radius: 0.8125rem;
 }
 
 .project .projectButtons {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 5px;
+  gap: 0.625rem;
+  margin-bottom: 0.3125rem;
 }
 
 .project .projectButtons img {
-  width: 18px;
-  height: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
 }
 
 .projectButtons .whiteButton {
   display: flex;
   align-items: center;
-  gap: 5px;
-  font-size: 14px;
-  padding: 8px 16px;
+  gap: 0.3125rem;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
   background: var(--white);
   color: var(--black);
   text-decoration: none;
   font-weight: 500;
-  border-radius: 21.665px;
+  border-radius: 1.353rem;
   transition: all 0.3s ease-in-out;
 }
 
@@ -113,14 +115,14 @@
 .projectButtons .blackButton {
   display: flex;
   align-items: center;
-  gap: 5px;
-  font-size: 14px;
-  padding: 8px 16px;
+  gap: 0.3125rem;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
   border: 1px solid var(--border);
   color: var(--white);
   text-decoration: none;
   font-weight: 500;
-  border-radius: 21.665px;
+  border-radius: 1.353rem;
   transition: all 0.3s ease-in-out;
 }
 

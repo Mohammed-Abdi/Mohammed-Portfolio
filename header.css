@@ -5,10 +5,9 @@
   width: 100%;
   border: 1px solid var(--border);
   opacity: 0;
-  transform: translateY(-10px);
+  transform: translateY(-0.625rem);
   transition: all 0.775s ease-in-out;
   z-index: 99;
-  max-height: 70px;
 }
 
 #header.show {
@@ -20,19 +19,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 30px;
+  padding: 0.625rem 1.875rem;
   width: 100%;
-  max-width: 1400px;
+  max-width: 75rem;
   margin: auto;
 }
 
-/*makes all anchors in header normal text*/
+/* makes all anchors in header normal text */
 .header a {
   color: inherit;
   text-decoration: none;
 }
 
-/*Logo*/
+/* Logo */
 .header .logo {
   display: flex;
   justify-content: center;
@@ -40,17 +39,17 @@
 }
 
 .header .logo img {
-  height: 36px;
-  width: 36px;
+  height: 2.25rem;
+  width: 2.25rem;
 }
 
-/*Navigation*/
+/* Navigation */
 .header ul {
-  font-size: 12px;
-  gap: 20px;
+  font-size: 0.75rem;
+  gap: 1.25rem;
   display: flex;
   list-style: none;
-  margin-right: -60px;
+  margin-right: -3.75rem;
 }
 
 .header ul .navLink {
@@ -59,13 +58,13 @@
   transition: all 0.3s ease-in-out;
 }
 
-/*like hover effect*/
+/* like hover effect */
 .header ul .navLink::after {
   content: "";
   position: absolute;
   left: 0;
-  transform: translateY(18px);
-  height: 2px;
+  transform: translateY(1.125rem);
+  height: 0.125rem;
   width: 0%;
   background: var(--white);
   transition: all 0.3s ease-in-out;
@@ -82,12 +81,12 @@
 
 .header .socialLinks {
   display: flex;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .socialLinks img {
-  height: 22px;
-  width: 22px;
+  height: 1.375rem;
+  width: 1.375rem;
 }
 
 .socialLinks a {
@@ -96,37 +95,37 @@
   justify-content: center;
   border: 1px solid var(--border);
   border-radius: 50%;
-  height: 30px;
-  width: 30px;
+  height: 1.875rem;
+  width: 1.875rem;
   transition: all 0.3s ease-in-out;
 }
 
 .socialLinks a:hover {
-  transform: scale(1.05) translateY(-5px);
+  transform: scale(1.05) translateY(-0.3125rem);
 }
 
-/*Menu for mobiles*/
+/* Menu for mobiles */
 .header .menu {
   display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  margin-right: -20px;
-  gap: 4px;
+  padding: 1.25rem;
+  margin-right: -1.25rem;
+  gap: 0.25rem;
   z-index: 99;
 }
 
 .menu .bar {
-  height: 2px;
-  border-radius: 1px;
-  width: 20px;
+  height: 0.125rem;
+  border-radius: 0.0625rem;
+  width: 1.25rem;
   background: var(--white);
   transition: all 0.3s ease-in-out;
 }
 
 .menu.active .bar:nth-child(1) {
-  transform: rotate(45deg) translate(4.25px, 4.25px);
+  transform: rotate(45deg) translate(0.265625rem, 0.265625rem);
 }
 
 .menu.active .bar:nth-child(2) {
@@ -134,10 +133,10 @@
 }
 
 .menu.active .bar:nth-child(3) {
-  transform: rotate(-45deg) translate(4.25px, -4.25px);
+  transform: rotate(-45deg) translate(0.265625rem, -0.265625rem);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
   .header .menu {
     display: flex;
   }
@@ -145,15 +144,14 @@
     text-align: center;
     flex-direction: column;
     background: var(--black);
-    padding-block: 40px 75px;
-    padding-inline: 30px;
+    padding-block: 2.5rem 4.6875rem;
+    padding-inline: 1.875rem;
     position: absolute;
-    top: 19px;
-    gap: 30px;
-    right: 70px;
-    border-radius: 10px;
+    top: 1rem;
+    gap: 1.875rem;
+    right: 4.375rem;
+    border-radius: 0.625rem;
     border: 1px solid var(--border);
-    box-shadow: 0.1px 0.2px 5px var(--border);
     opacity: 0;
     transition: all 0.3s ease-in-out;
     z-index: 99;
@@ -164,17 +162,17 @@
   .header ul .navLink::before {
     content: "";
     position: absolute;
-    transform: translateY(30px);
-    height: 1px;
+    transform: translateY(1.875rem);
+    height: 0.0625rem;
     width: 100%;
     background: var(--border);
     transition: all 0.3s ease-in-out;
   }
   .header .socialLinks {
     position: absolute;
-    right: 19px;
-    gap: 10px;
-    top: 200px;
+    right: 1.1875rem;
+    gap: 0.625rem;
+    top: 12.5rem;
     transition: all 0.3s ease-in-out;
     opacity: 0;
     z-index: 99;
@@ -183,7 +181,7 @@
     opacity: 1;
   }
   .header .socialLinks img {
-    height: 22px;
-    width: 22px;
+    height: 1.375rem;
+    width: 1.375rem;
   }
 }

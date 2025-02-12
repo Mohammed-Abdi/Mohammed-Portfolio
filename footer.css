@@ -2,11 +2,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 70px 30px;
+  padding: 4.375rem 1.875rem;
   width: 100%;
 }
 
 footer {
-  font-size: 12px;
+  font-size: 0.75rem;
   opacity: 0.5;
 }
