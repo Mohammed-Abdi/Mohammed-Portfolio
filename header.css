@@ -40,9 +40,9 @@
   align-items: center;
 }
 
-.header .logo {
-  height: 30px;
-  width: 30px;
+.header .logo img {
+  height: 36px;
+  width: 36px;
 }
 
 /*Navigation*/
