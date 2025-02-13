@@ -3,7 +3,7 @@
   background: var(--black);
   top: 0;
   width: 100%;
-  border: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
   opacity: 0;
   transform: translateY(-0.625rem);
   transition: all 0.775s ease-in-out;
