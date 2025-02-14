@@ -1,0 +1,198 @@
+/*header*/
+#header {
+  opacity: 0;
+  transform: translateY(-0.625rem);
+  transition: all 0.775s ease-in-out;
+}
+
+#header.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/*hero*/
+.hero .container {
+  opacity: 0;
+  transform: translateY(1.875rem);
+  scale: 0.99;
+  transition: all 0.7s ease-in-out;
+}
+
+.hero .container.show {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+.status {
+  opacity: 0;
+  transform: scale(0.79);
+  transition: all 0.7s ease-in-out;
+}
+
+.status.show {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/*Status color flickering*/
+.status .statusColor {
+  animation: light 1.5s infinite alternate;
+}
+
+@keyframes light {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
+
+/*show case my status if I am available or not*/
+.status .statusColor {
+  font-weight: 700;
+  color: var(--available);
+}
+
+/*Arrow animation telling users to scroll*/
+.scroll-up-arrow {
+  position: absolute;
+  bottom: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 4.5rem;
+  gap: -3.125rem;
+  line-height: 0.625rem;
+  opacity: 0.7;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.arrow {
+  display: block;
+  transform: rotate(-90deg);
+  animation: arrowWave 1.2s infinite;
+}
+
+.arrow:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+@keyframes arrowWave {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/*about*/
+.container .about {
+  opacity: 0;
+  transform: translateX(-3.875rem);
+  transition: all 0.9s ease-in-out;
+}
+
+.container .about.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/*contact*/
+.container .contact {
+  opacity: 0;
+  transform: translateX(3.875rem);
+  transition: all 0.95s ease-in-out;
+}
+
+.container .contact.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.techSkills .tech {
+  opacity: 0;
+  transform: translateX(-1.875rem);
+  transition: all 0.7s ease-in-out;
+}
+
+.techSkills .tech.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.tech:nth-child(1) {
+  transition-delay: 0s;
+}
+
+.tech:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.tech:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.tech:nth-child(4) {
+  transition-delay: 0s;
+}
+
+.tech:nth-child(5) {
+  transition-delay: 0.2s;
+}
+
+/*Projects*/
+.container .project {
+  opacity: 0;
+  transform: translateY(2.875rem);
+  scale: 0.99;
+  transition: all 1s ease-in-out;
+}
+
+.container .project.show {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+/*Experience*/
+.container .experience {
+  opacity: 0;
+  transform: translateY(1.875rem) scale(0.99);
+  transition: all 0.7s ease-in-out;
+}
+
+.container .experience.show {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+@media (max-width: 740px) {
+  /*about go vertically*/
+  .container .about {
+    transform: translateY(2.875rem);
+  }
+
+  .container .about.show {
+    transform: translateY(0);
+  }
+  /*contact go vertically*/
+  .container .contact {
+    transform: translateY(2.875rem);
+  }
+
+  .container .contact.show {
+    transform: translateY(0);
+  }
+  /*no transition delay*/
+  .tech:nth-child(1),
+  .tech:nth-child(2),
+  .tech:nth-child(3),
+  .tech:nth-child(4),
+  .tech:nth-child(5) {
+    transition-delay: 0s;
+  }
+}

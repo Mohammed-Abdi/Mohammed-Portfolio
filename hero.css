@@ -31,15 +31,6 @@
   flex-direction: column;
   align-items: center;
   gap: 1.875rem;
-  opacity: 0;
-  transform: translateY(1.875rem);
-  scale: 0.99;
-  transition: all 0.7s ease-in-out;
-}
-
-.hero .container.show {
-  transform: translateY(0) scale(1);
-  opacity: 1;
 }
 
 .hero .container .texts {
@@ -55,30 +46,8 @@
   font-size: 0.875rem;
   padding: 0.5rem 1rem;
   border-radius: 1.271rem;
-  opacity: 0;
-  transform: scale(0.79);
-  transition: all 0.7s ease-in-out;
-}
-
-.status.show {
-  transform: scale(1);
-  opacity: 1;
-}
-
-/*show case my status if I am available or not*/
-.status .statusColor {
-  font-weight: 700;
-  color: var(--available);
-  animation: light 1.5s infinite alternate;
-}
-
-@keyframes light {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.25;
-  }
+  background: var(--black);
+  border: 1px solid var(--border);
 }
 
 .hero .name,
@@ -133,42 +102,6 @@
 .buttons img {
   width: 1.0625rem;
   height: 1.0625rem;
-}
-
-/*Arrow animation telling users to scroll*/
-.scroll-up-arrow {
-  position: absolute;
-  bottom: 1.875rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 4.5rem;
-  gap: -3.125rem;
-  line-height: 0.625rem;
-  opacity: 0.7;
-  cursor: pointer;
-  text-decoration: none;
-  color: inherit;
-}
-
-.arrow {
-  display: block;
-  transform: rotate(-90deg);
-  animation: arrowWave 1.2s infinite;
-}
-
-.arrow:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-@keyframes arrowWave {
-  0%,
-  100% {
-    opacity: 0.3;
-  }
-  50% {
-    opacity: 1;
-  }
 }
 
 @media (max-width: 29.375rem) {

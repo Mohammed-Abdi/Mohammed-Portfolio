@@ -11,6 +11,7 @@
       media="(prefers-color-scheme: dark)"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="animateOnScroll.js" defer></script>
     <script src="script.js" defer></script>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -183,56 +184,59 @@
             </div>
           </div>
           <!--Technologies I use-->
-          <div class="techSkills">
-            <div class="tech css hidden">
-              <div class="techImages">
-                <img src="Images/Icons/CSS.svg" alt="css" /><span
-                  class="techName"
-                  >CSS</span
-                >
+          <div class="wrapper">
+            <h2>Technologies I have worked with</h2>
+            <div class="techSkills">
+              <div class="tech css hidden">
+                <div class="techImages">
+                  <img src="Images/Icons/CSS.svg" alt="css" /><span
+                    class="techName"
+                    >CSS</span
+                  >
+                </div>
+                <div class="percent"><div class="fill"></div></div>
+                <span class="percentage">84%</span>
               </div>
-              <div class="percent"><div class="fill"></div></div>
-              <span class="percentage">84%</span>
-            </div>
-            <div class="tech js hidden">
-              <div class="techImages">
-                <img src="Images/Icons/javaScript.svg" alt="javaScript" /><span
-                  class="techName"
-                  >JavaScript</span
-                >
+              <div class="tech js hidden">
+                <div class="techImages">
+                  <img
+                    src="Images/Icons/javaScript.svg"
+                    alt="javaScript"
+                  /><span class="techName">JavaScript</span>
+                </div>
+                <div class="percent"><div class="fill"></div></div>
+                <span class="percentage">75%</span>
               </div>
-              <div class="percent"><div class="fill"></div></div>
-              <span class="percentage">75%</span>
-            </div>
-            <div class="tech cPlusPlus hidden">
-              <div class="techImages">
-                <img src="Images/Icons/c++.svg" alt="c++" /><span
-                  class="techName"
-                  >C++</span
-                >
+              <div class="tech cPlusPlus hidden">
+                <div class="techImages">
+                  <img src="Images/Icons/c++.svg" alt="c++" /><span
+                    class="techName"
+                    >C++</span
+                  >
+                </div>
+                <div class="percent"><div class="fill"></div></div>
+                <span class="percentage">79%</span>
               </div>
-              <div class="percent"><div class="fill"></div></div>
-              <span class="percentage">79%</span>
-            </div>
-            <div class="tech html hidden">
-              <div class="techImages">
-                <img src="Images/Icons/html.svg" alt="html" /><span
-                  class="techName"
-                  >HTML</span
-                >
+              <div class="tech html hidden">
+                <div class="techImages">
+                  <img src="Images/Icons/html.svg" alt="html" /><span
+                    class="techName"
+                    >HTML</span
+                  >
+                </div>
+                <div class="percent"><div class="fill"></div></div>
+                <span class="percentage">95%</span>
               </div>
-              <div class="percent"><div class="fill"></div></div>
-              <span class="percentage">95%</span>
-            </div>
-            <div class="tech git hidden">
-              <div class="techImages">
-                <img src="Images/Icons/git.svg" alt="git" /><span
-                  class="techName"
-                  >Git</span
-                >
+              <div class="tech git hidden">
+                <div class="techImages">
+                  <img src="Images/Icons/git.svg" alt="git" /><span
+                    class="techName"
+                    >Git</span
+                  >
+                </div>
+                <div class="percent"><div class="fill"></div></div>
+                <span class="percentage">76%</span>
               </div>
-              <div class="percent"><div class="fill"></div></div>
-              <span class="percentage">76%</span>
             </div>
           </div>
         </div>
@@ -283,14 +287,16 @@
               </div>
             </div>
           </div>
-           <!--Project-->
+          <!--Project-->
           <div class="project recipe hidden">
             <img src="Images/Projects/recipe-mockup.webp" alt="Recipe" />
             <div class="detailsContainer">
               <div class="projectDetails">
                 <span class="projectTitle">m-Recipe</span>
                 <p>
-                 A comprehensive platform for discovering, exploring, and learning how to prepare authentic traditional recipes from various cultures.
+                  A comprehensive platform for discovering, exploring, and
+                  learning how to prepare authentic traditional recipes from
+                  various cultures.
                 </p>
               </div>
               <div class="technologiesUsed">

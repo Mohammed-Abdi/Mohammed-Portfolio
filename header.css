@@ -4,15 +4,7 @@
   top: 0;
   width: 100%;
   border-bottom: 1px solid var(--border);
-  opacity: 0;
-  transform: translateY(-0.625rem);
-  transition: all 0.775s ease-in-out;
   z-index: 99;
-}
-
-#header.show {
-  transform: translateY(0);
-  opacity: 1;
 }
 
 #header .header {
