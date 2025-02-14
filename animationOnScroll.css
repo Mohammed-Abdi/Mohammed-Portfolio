@@ -86,7 +86,7 @@
   height: 0.25rem;
   border-radius: 0.125rem;
   background: var(--white);
-  transition: all 3s ease-in-out;
+  transition: all 2.5s ease-in-out;
 }
 
 .css .fill.show {
