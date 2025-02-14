@@ -166,6 +166,7 @@
 }
 
 #about .wrapper h2 {
+  text-align: center;
   padding-block: 50px;
   font-size: 1.25rem;
   font-weight: 500;
@@ -222,14 +223,14 @@
 }
 
 .css .fill {
-  width: 5.25rem;
+  width: 91px;
   height: 0.25rem;
   border-radius: 0.125rem;
   background: var(--white);
 }
 
 .js .fill {
-  width: 4.6875rem;
+  width: 77px;
   height: 0.25rem;
   border-radius: 0.125rem;
   background: var(--white);
@@ -242,7 +243,7 @@
   background: var(--white);
 }
 .html .fill {
-  width: 5.9375rem;
+  width: 98px;
   height: 0.25rem;
   border-radius: 0.125rem;
   background: var(--white);
