@@ -145,11 +145,13 @@
     border-radius: 0.625rem;
     border: 1px solid var(--border);
     opacity: 0;
+    transform: translateY(-100px) scale(0);
     transition: all 0.3s ease-in-out;
     z-index: 99;
   }
   .header ul.active {
     opacity: 1;
+    transform: translateY(0) scale(1);
   }
   .header ul .navLink::before {
     content: "";
@@ -167,10 +169,12 @@
     top: 12.5rem;
     transition: all 0.3s ease-in-out;
     opacity: 0;
+    transform: translateY(-100px) scale(0);
     z-index: 99;
   }
   .header .socialLinks.active {
     opacity: 1;
+    transform: translateY(0) scale(1);
   }
   .header .socialLinks img {
     height: 1.375rem;

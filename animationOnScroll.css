@@ -80,6 +80,31 @@
   animation-delay: 0.2s;
 }
 
+/*fill animation by percentage*/
+.fill {
+  width: 0;
+  height: 0.25rem;
+  border-radius: 0.125rem;
+  background: var(--white);
+  transition: all 3s ease-in-out;
+}
+
+.css .fill.show {
+  width: 5.6875rem;
+}
+.js .fill.show {
+  width: 4.8125rem;
+}
+.cPlusPlus .fill.show {
+  width: 5.4375rem;
+}
+.html .fill.show {
+  width: 6.125rem;
+}
+.git .fill.show {
+  width: 4.75rem;
+}
+
 @keyframes arrowWave {
   0%,
   100% {

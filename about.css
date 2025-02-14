@@ -1,4 +1,4 @@
-/*section headings*/
+/* Section Headings */
 .sectionTitle {
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@
   margin-top: -2.5rem;
 }
 
-/*about section with container*/
+/* About Section with Container */
 #about .container {
   display: flex;
   flex-direction: column;
@@ -37,7 +37,6 @@
   gap: 1.25rem;
 }
 
-/*about and contact*/
 .container .aboutAndContact {
   display: flex;
   flex-wrap: wrap;
@@ -50,9 +49,10 @@
   width: 28.125rem;
   height: 22.75rem;
   border-radius: 0.625rem;
+  border: 1px solid var(--border);
 }
 
-/*about*/
+/* About */
 .container .about {
   display: flex;
   flex-direction: column;
@@ -61,7 +61,6 @@
   text-align: center;
   font-weight: 500;
   gap: 0.625rem;
-  border: 1px solid var(--border);
 }
 
 .about .profilePicture {
@@ -74,7 +73,6 @@
   background: var(--instagramGradient);
 }
 
-/*Profile Picture*/
 .about .profilePicture img {
   width: 9.375rem;
   height: auto;
@@ -95,14 +93,15 @@
   line-height: 1.25rem;
 }
 
-.about .role {
+.about .role,
+.about .age,
+.about .address {
   opacity: 0.7;
 }
 
 .about .age,
 .about .address {
   font-size: 0.75rem;
-  opacity: 0.7;
   line-height: 0.6875rem;
 }
 
@@ -113,12 +112,11 @@
   justify-content: center;
 }
 
-/*contact*/
+/* Contact */
 .container .contact {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid var(--border);
   padding: 1.25rem 3.125rem;
 }
 
@@ -157,7 +155,7 @@
   height: 1.875rem;
 }
 
-/*Technologies I use*/
+/* Technologies I Use */
 #about .wrapper {
   display: flex;
   flex-direction: column;
@@ -167,7 +165,7 @@
 
 #about .wrapper h2 {
   text-align: center;
-  padding-block: 50px;
+  padding-block: 3.125rem;
   font-size: 1.25rem;
   font-weight: 500;
 }
@@ -193,7 +191,6 @@
   gap: 0.625rem;
 }
 
-/*Tech image and name*/
 .techSkills .techImages {
   display: flex;
   gap: 0.625rem;
@@ -222,44 +219,10 @@
   opacity: 0.5;
 }
 
-.css .fill {
-  width: 91px;
-  height: 0.25rem;
-  border-radius: 0.125rem;
-  background: var(--white);
-}
-
-.js .fill {
-  width: 77px;
-  height: 0.25rem;
-  border-radius: 0.125rem;
-  background: var(--white);
-}
-
-.cPlusPlus .fill {
-  width: 4.9375rem;
-  height: 0.25rem;
-  border-radius: 0.125rem;
-  background: var(--white);
-}
-.html .fill {
-  width: 98px;
-  height: 0.25rem;
-  border-radius: 0.125rem;
-  background: var(--white);
-}
-.git .fill {
-  width: 4.75rem;
-  height: 0.25rem;
-  border-radius: 0.125rem;
-  background: var(--white);
-}
-
 @media (max-width: 61.25rem) {
   .aboutAndContact .about,
   .aboutAndContact .contact {
     width: 21.25rem;
     height: 22.75rem;
-    border-radius: 0.625rem;
   }
 }
