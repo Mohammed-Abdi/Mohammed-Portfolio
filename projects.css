@@ -69,8 +69,8 @@
   font-size: 0.75rem;
   font-weight: 500;
   padding: 0.125rem 0.5rem;
-  border: 1px solid var(--border);
-  border-radius: 0.8125rem;
+  background: var(--border);
+  border-radius: 0.68rem;
 }
 
 .project .projectButtons {
