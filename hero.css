@@ -6,7 +6,7 @@
   width: 100%;
   height: 100vh;
   text-align: center;
-  background: var(--black);
+  background: var(--primary);
   position: relative;
 }
 
@@ -15,7 +15,7 @@
   height: 8vh;
   width: 20vw;
   position: absolute;
-  background: #ffffff;
+  background: var(--secondary);
   filter: blur(100px);
 }
 
@@ -46,7 +46,7 @@
   font-size: 0.875rem;
   padding: 0.5rem 1rem;
   border-radius: 1.271rem;
-  background: var(--black);
+  background: var(--primary);
   border: 1px solid var(--border);
 }
 
@@ -86,8 +86,8 @@
   gap: 0.3125rem;
   align-items: center;
   text-decoration: none;
-  color: var(--black);
-  background: var(--white);
+  color: var(--primary);
+  background: var(--secondary);
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
   font-weight: 500;

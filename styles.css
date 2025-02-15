@@ -9,6 +9,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  color: var(--white);
-  background: var(--black);
+  color: var(--secondary);
+  background: var(--primary);
 }

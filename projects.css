@@ -91,8 +91,8 @@
   gap: 0.3125rem;
   font-size: 0.875rem;
   padding: 0.5rem 1rem;
-  background: var(--white);
-  color: var(--black);
+  background: var(--secondary);
+  color: var(--primary);
   text-decoration: none;
   font-weight: 500;
   border-radius: 1.353rem;
@@ -110,7 +110,7 @@
   font-size: 0.875rem;
   padding: 0.5rem 1rem;
   border: 1px solid var(--border);
-  color: var(--white);
+  color: var(--secondary);
   text-decoration: none;
   font-weight: 500;
   border-radius: 1.353rem;
@@ -119,4 +119,36 @@
 
 .projectButtons .blackButton:hover {
   background: var(--border);
+}
+
+#projects .seeMore {
+  display: flex;
+  gap: 0.625rem;
+  margin-block: 2rem;
+}
+
+#projects .seeMoreBtn {
+  display: flex;
+  gap: 0.125rem;
+  align-items: center;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--secondary);
+  background: var(--primary);
+  border: 2px solid var(--secondary);
+  padding-block: 0.5rem;
+  padding-inline: 1.2rem 0.8rem;
+  border-radius: 1.271rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#projects .seeMoreBtn:hover {
+  color: var(--primary);
+  background: var(--secondary);
+}
+
+#projects .seeMore i {
+  font-weight: 500;
+  transform: rotate(135deg);
 }

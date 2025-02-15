@@ -1,6 +1,6 @@
 #header {
   position: fixed;
-  background: var(--black);
+  background: var(--primary);
   top: 0;
   width: 100%;
   border-bottom: 1px solid var(--border);
@@ -58,7 +58,7 @@
   transform: translateY(1.125rem);
   height: 0.125rem;
   width: 0%;
-  background: var(--white);
+  background: var(--secondary);
   transition: all 0.3s ease-in-out;
 }
 
@@ -112,7 +112,7 @@
   height: 0.125rem;
   border-radius: 0.0625rem;
   width: 1.25rem;
-  background: var(--white);
+  background: var(--secondary);
   transition: all 0.3s ease-in-out;
 }
 
@@ -135,7 +135,7 @@
   .header ul {
     text-align: center;
     flex-direction: column;
-    background: var(--black);
+    background: var(--primary);
     padding-block: 2.5rem 4.6875rem;
     padding-inline: 1.875rem;
     position: absolute;
@@ -145,7 +145,7 @@
     border-radius: 0.625rem;
     border: 1px solid var(--border);
     opacity: 0;
-    transform: translateY(-100px) scale(0);
+    transform: translateY(-6.25rem) scale(0);
     transition: all 0.3s ease-in-out;
     z-index: 99;
   }
@@ -169,7 +169,7 @@
     top: 12.5rem;
     transition: all 0.3s ease-in-out;
     opacity: 0;
-    transform: translateY(-100px) scale(0);
+    transform: translateY(-6.25rem) scale(0);
     z-index: 99;
   }
   .header .socialLinks.active {

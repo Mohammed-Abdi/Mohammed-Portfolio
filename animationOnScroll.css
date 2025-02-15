@@ -85,7 +85,7 @@
   width: 0;
   height: 0.25rem;
   border-radius: 0.125rem;
-  background: var(--white);
+  background: var(--secondary);
   transition: all 2.5s ease-in-out;
 }
 
@@ -195,7 +195,7 @@
   opacity: 1;
 }
 
-@media (max-width: 740px) {
+@media (max-width: 46.25rem) {
   /*about go vertically*/
   .container .about {
     transform: translateY(2.875rem);

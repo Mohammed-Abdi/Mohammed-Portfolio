@@ -67,17 +67,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 9.6875rem;
+  width: 10rem;
   height: 10rem;
   border-radius: 50%;
   background: var(--instagramGradient);
 }
 
 .about .profilePicture img {
-  width: 9.375rem;
+  width: 9.5rem;
   height: auto;
   border-radius: 50%;
-  border: 0.3125rem solid var(--black);
+  border: 0.3125rem solid var(--primary);
 }
 
 .about .information {
