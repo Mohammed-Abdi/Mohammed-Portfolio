@@ -13,7 +13,6 @@
 #hero .glow {
   height: 10vh;
   width: 0;
-  transform: rotate(45deg);
   position: absolute;
   top: 100px;
   left: 0;
@@ -24,6 +23,7 @@
 }
 
 #hero .glow.show {
+  transform: rotate(45deg);
   width: 45vw;
 }
 
@@ -107,9 +107,8 @@
   opacity: 0.7;
 }
 
-.buttons img {
-  width: 1.0625rem;
-  height: 1.0625rem;
+.buttons i {
+  font-size: 1.25rem;
 }
 
 @media (max-width: 29.375rem) {
