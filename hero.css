@@ -112,9 +112,6 @@
 }
 
 @media (max-width: 29.375rem) {
-  #hero {
-    height: 98vh;
-  }
   .hero .name,
   .hero .profession {
     font-size: 1.75rem;
