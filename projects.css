@@ -69,7 +69,8 @@
   font-size: 0.75rem;
   font-weight: 500;
   padding: 0.125rem 0.5rem;
-  background: var(--border);
+  background: var(--neon);
+  border: 1px solid var(--border);
   border-radius: 0.68rem;
 }
 
@@ -95,7 +96,7 @@
   color: var(--primary);
   text-decoration: none;
   font-weight: 500;
-  border-radius: 1.353rem;
+  border-radius: 1.176rem;
   transition: all 0.3s ease-in-out;
 }
 
@@ -113,7 +114,7 @@
   color: var(--secondary);
   text-decoration: none;
   font-weight: 500;
-  border-radius: 1.353rem;
+  border-radius: 1.176rem;
   transition: all 0.3s ease-in-out;
 }
 

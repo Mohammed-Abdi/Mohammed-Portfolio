@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-block: 5.75rem 1.25rem;
+  padding-block: 1.25rem;
   opacity: 0;
   transform: translateY(1.875rem) scale(0.99);
   transition: all 0.7s ease-in-out;
@@ -124,16 +124,12 @@
   display: flex;
   align-items: center;
   gap: 0.625rem;
+  margin-left: -20px;
 }
 
 .contact .heading span {
   font-size: 0.875rem;
   opacity: 0.7;
-}
-
-.contact .heading img {
-  width: 1.375rem;
-  height: 1.375rem;
 }
 
 .contact a {
@@ -146,13 +142,20 @@
   transition: all 0.3s ease-in-out;
 }
 
-.contact a:hover {
-  text-decoration: underline;
+.contact a i {
+  font-size: 1.6rem;
 }
 
-.contact a img {
-  width: 1.875rem;
-  height: 1.875rem;
+.contact a:hover .slide {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.contact .slide {
+  transform: translateX(-0.625rem);
+  opacity: 0;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Technologies I Use */

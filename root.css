@@ -1,7 +1,8 @@
 :root {
   --primary: #000000;
   --secondary: #f8fafc;
-  --border: #1e293b;
+  --border: #282c39;
+  --neon: #121212;
   --gradient: radial-gradient(
     circle,
     rgba(255, 255, 255, 0.1) 1%,
