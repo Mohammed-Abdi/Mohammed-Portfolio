@@ -1,6 +1,11 @@
 :root {
   --primary: #000000;
-  --secondary: #fafafa;
+  --primary-tr: rgba(0, 0, 0, 0.3);
+  --secondary: #ffffff;
+  --tertiary: rgba(26, 26, 26, 0.3);
+  --shadow: #272727;
+  --max-width: 1000px;
+  --global-padding: 1.25rem;
   --border: #282c39;
   --neon: #121212;
   --gradient: radial-gradient(

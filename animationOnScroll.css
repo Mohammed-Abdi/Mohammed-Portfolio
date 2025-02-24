@@ -1,11 +1,11 @@
 /*header*/
-#header {
+header {
   opacity: 0;
   transform: translateY(-0.625rem);
   transition: all 0.775s ease-in-out;
 }
 
-#header.show {
+header.show {
   transform: translateY(0);
   opacity: 1;
 }

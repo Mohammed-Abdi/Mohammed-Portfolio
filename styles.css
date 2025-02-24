@@ -13,3 +13,8 @@ body {
   color: var(--secondary);
   background: var(--primary);
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
