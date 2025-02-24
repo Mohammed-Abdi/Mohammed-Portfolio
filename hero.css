@@ -44,7 +44,6 @@
 .hero .container .texts {
   display: flex;
   flex-direction: column;
-  gap: 1.875rem;
 }
 
 .hero .status {
@@ -60,22 +59,24 @@
 
 .hero .name,
 .hero .profession {
-  font-size: 4.5rem;
+  font-size: clamp(12px, 8vw, 40px);
   font-weight: 700;
-  line-height: 3.4375rem;
 }
 
 .hero .intro {
   background: var(--textGradient);
   background-clip: text;
   color: transparent;
-  max-width: 70%;
+  font-size: 12px;
+  font-weight: 500;
   text-align: center;
   margin-inline: auto;
 }
 
 .hero .buttons {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.25rem;
   align-items: center;
   opacity: 0;
@@ -110,7 +111,7 @@
 .buttons i {
   font-size: 1.25rem;
 }
-
+/*
 @media (max-width: 29.375rem) {
   #hero {
     height: 96vh;
