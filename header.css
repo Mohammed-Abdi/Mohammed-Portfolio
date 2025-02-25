@@ -124,12 +124,13 @@ nav .contact-header {
     flex-direction: column;
     padding-block: 20px 50px;
     height: 100vh;
-    background: var(--tertiary);
+    background: var(--primary-tr);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     transform: translateX(-200px);
     transition: all 0.3s ease-in-out;
     z-index: 50;
+    box-shadow: 1px 2px 3px #000;
   }
   nav .navLinks.active {
     transform: translateX(0);
@@ -147,7 +148,6 @@ nav .contact-header {
   nav .navLinks li:nth-child(1),
   nav .navLinks li:nth-child(2) {
     display: flex;
-    gap: 10px;
     justify-content: center;
     align-items: center;
     padding: 8px 25px;
